@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrices AxB</title>
+</head>
+<h1>José Alejandro Rodríguez Ramirez</h1>
+<h2>LEER UN NUMERO N, ASIGNAR N A DIAGONAL DE UNA MATRIZ 5X5. ASIGNAR N+1 ARRIBA DIAGNONAL. ASIGNAR N-1 ABAJO DE DIAGONAL</h2>
+<br>
+<body>
+    <p>import java.util.Scanner;<br />public class matricesAyB {<br />public static void main(String[] args)
+        {<br /><br />int a[][], b[][];<br />int clonA, clonB;<br /><br />a = new int [3][3];<br />b = new int
+        [3][3];<br />Scanner sc= new Scanner(System.in);<br />System.out.println("Ingrese los numeros de la matriz A:
+        ");<br />System.out.println("-------");<br />for (int i = 0; i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3;
+        j++) {<br />System.out.println( i+"-"+
+        j);<br />a[i][j]=sc.nextInt();<br />}<br /><br />}<br />System.out.println("Ingrese los datos de la matriz B:
+        ");<br />System.out.println("-------");<br />for (int i = 0; i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3;
+        j++) {<br />System.out.println( i+"-"+
+        j);<br />b[i][j]=sc.nextInt();<br />}<br /><br />}<br />System.out.println("Matriz A: ");<br />for (int i = 0; i
+        &lt; 3; i++) {<br />for (int j = 0; j &lt; 3; j++) {<br />System.out.print(a[i][j]+"
+        ");<br />}<br />System.out.println("
+        ");<br />}<br />System.out.println("--------------");<br />System.out.println("Matriz B:");<br />for (int i = 0;
+        i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3; j++) {<br />System.out.print(b[i][j]+"
+        ");<br />}<br />System.out.println(" ");<br />}<br /><br />for (int i = 0; i &lt; 3; i++) {<br />for (int j = 0;
+        j &lt; 3; j++)
+        {<br />clonA=a[i][j];<br />clonB=b[i][j];<br />a[i][j]=clonB;<br />b[i][j]=clonA;<br /><br />}<br /><br /><br />}<br />System.out.println("");<br />System.out.println("CAMBIO:");<br />System.out.println("Matriz
+        A: ");<br />for (int i = 0; i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3; j++)
+        {<br />System.out.print(a[i][j]+" ");<br />}<br />System.out.println("
+        ");<br />}<br />System.out.println("--------------");<br />System.out.println("Matriz B:");<br />for (int i = 0;
+        i &lt; 3; i++) {<br />for (int j = 0; j &lt; 3; j++) {<br />System.out.print(b[i][j]+"
+        ");<br />}<br />System.out.println(" ");<br />}<br />}<br />}</p>
+</body>
+<br>
+<br>
+<h2>Ejemplo</h2>
+<img src="img1.png" alt="">
+</html>
